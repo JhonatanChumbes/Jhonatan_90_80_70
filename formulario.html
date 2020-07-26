@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilos_1.css">
+</head>
+<body>
+    <div id=principal>
+		<header>
+			<h1>Registro para la autorizacion</h1>
+        </header><br>
+        <h2>Para ingresar necesita primero Registrarse</h2>
+        <form method="post" action="#">
+            <h1>Informacion del usuario:</h1>
+            <hr size=5 color=black><br>
+		    <label for="name">Nombre:(obligatorio)</label>
+		    <input type="text" style="text-transform:uppercase;" value="" name="name" id="name" placeholder="Jhonatan" required=""><br><br>  
+		    <label for="apellido">Primer Apellido:(obligatorio)</label>
+		    <input type="text" style="text-transform:uppercase;" value="" name="apellido" id="apellido" placeholder="Chumbes" required=""><br><br>
+		    <label for="apellido_2">Segundo Apellido:(obligatorio)</label>
+			<input type="text" style="text-transform:uppercase;" value="" name="S.apellido" id="S.apellido" placeholder="Melchor" required=""><br><br>
+			<label for="numeros">Edad: </label> 
+			<input type="number" name="numero" required=""><br><br>
+			<label>Sexo:</label>
+			<select>
+				<option value="Seleccione">Seleccione</option>
+				<option value="Masculino">Masculino</option>
+				<option value="Femenino">Femenino</option>
+			</select><br><br>
+			<label for="correo">Correo electronico:(obligatorio)</label>
+			<input type="email" name="correo" placeholder="jchumbes@hotmail.com" required=""><br><br>
+			<label>N° de DNI: </label> 
+			<input type="text" name="numero" maxlength="7" pattern="[0-9]{7}" step="2" placeholder="7777777"><br><br>
+	        <label for="numero">Numero de Telefono:(obligatorio)</label>
+	        <input type="text" name="Telefono" id="Telefono" placeholder="999999999" pattern="[0-9]{9}" maxlength="9" required=""> <br> <br> 
+			<label>Fecha de nacimiento:</label>
+			<input type="date" name="fecha" id="fecha" min="10-01-01" required=""><br><br>
+			<label>País:</label>	
+		    <select>
+			    <option value="Seleccione su país">Seleccione su país</option>
+			    <option value="Estados Unidos(EE.UU)">Estados Unidos(EE.UU)</option>
+			    <option value="Peru">Peru</option>
+			    <option value="Brasil">Brasil</option>
+				<option value="Uruguay">Uruguay</option>
+				<option value="Mexico">Mexico</option>
+				<option value="Argentina">Argentina</option>
+				<option value="Canadá">Canadá</option>
+				<option value="Italia">Italia</option>
+				<option value="Rusia">Rusia</option>
+				<option value="Francia">Francia</option>
+				<option value="Venezuela">Venezuela</option>
+				<option value="España">España</option>
+				<option value="Paraguay">Paraguay</option>
+				<option value="Colombia">Colombia</option>
+			</select><br><br>            
+			<h1>Informacion del permiso:</h1>
+			<hr size=5 color=black><br>
+		    <label id="metodo">Tiempo de ingreso:</label><br><br>
+		    <input type="radio" name="r1" id="1" required="">Mañana<br>
+		    <input type="radio" name="r1" id="2" required="">Tarde<br>
+		    <input type="radio" name="r1" id="3" required="">Noche<br><br>
+            <input type="checkbox" required=""> <label id="cliente" >¿Acepta los terminos y condiciones de servicio de la politica de exitosos de oro?</label><br><br>
+            <a href="proyecto.html" id="a1">Regresar</a> <button id="a3">Enviar datos</button><a href="inicio.html" id="a2">Ingresar</a>
+        </form>
+</body>
+</html>
